@@ -1,111 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Catharina Zagiacomo">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-        <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
-		<title>Meu Perfil</title>
-	</head>
-	<body>
-		<header>
-			<div id="header_content">
-				<div id="titulo">
-					<h1>Catharina Zagiacomo</h1>
-				</div>
-				<div id="menu">
-					<nav>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</header>
-		<main>
-			<section id="contact">
-				<form action="#" method="submit">
-					<label for="nome">Nome: </label>
-					<input
-						id="nome"
-						type="text"
-						name="name"
-						placeholder="Digite seu nome"
-						required
-					/>
-					<span id="txtNome"></span>
-					<label for="email">Email: </label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						placeholder="Digite seu email"
-						required
-					/>
-					<span id="txtEmail"></span>
-					<label for="subject">Assunto: </label>
-					<input
-						id="subject"
-						type="text"
-						name="subject"
-						placeholder="Digite o título da mensagem"
-						required
-					/>
-					<span id="txtSubject"></span>
 
-					<label for="message">Mensagem: </label>
-					<textarea
-						id="message"
-						name="message"
-						placeholder="Digite sua mensagem"
-						required
-					>
-					</textarea>
-					<button type="submit">Enviar</button>
-				</form>
-				<article id="mapa">
-					<div id="endereco">
-						<p>Castle Road</p>
-						<p>Blackrock, Cork, Irlanda</p>
-					</div>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8280.635268138512!2d-8.40629893584305!3d51.90024534427724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449ad7d02b766f%3A0xf73c692f28a40287!2sBlackrock%20Castle%20Observatory!5e0!3m2!1spt-BR!2sbr!4v1736180686476!5m2!1spt-BR!2sbr"
-						width="400"
-						height="250"
-						frameborder="0"
-						style="border: 0"
-						allowfullscreen=""
-						aria-hidden="false"
-						tabindex="0"
-						id="mapa"
-					>
-                    </iframe>
-				</article>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto Portfólio">
+	<meta name="author" content="Catharina Zagiacomo">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Meu Perfil</title>
+</head>
+
+<body>
+	<header>
+		<div id="header_content" class="flex">
+			<div id="titulo">
+				<h1>Catharina Zagiacomo</h1>
+			</div>
+			<div id="menu">
+				<nav>
+					<ul id="menu">
+						<li>
+							<a href="index.html"> Home </a>
+						</li>
+						<li>
+							<a href="contato.html"> Contato </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="contact" class="flex">
+			<form action="#" method="submit">
+				<label for="nome">Nome: </label>
+				<input id="nome" type="text" name="name" placeholder="Digite seu nome" required />
+				<span id="txtNome"></span>
+				<label for="email">Email: </label>
+				<input id="email" type="email" name="email" placeholder="Digite seu email" required />
+				<span id="txtEmail"></span>
+				<label for="subject">Assunto: </label>
+				<input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
+				<span id="txtSubject"></span>
+				<label for="message">Mensagem: </label>
+				<textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+				<button type="submit">Enviar</button>
+			</form>
+
+			<section id="mapa" class="flex_start">
+				<div id="endereco">
+					<p>Castle Road</p>
+					<p>Blackrock, Cork, Irlanda</p>
+				</div>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8280.635268138512!2d-8.40629893584305!3d51.90024534427724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449ad7d02b766f%3A0xf73c692f28a40287!2sBlackrock%20Castle%20Observatory!5e0!3m2!1spt-BR!2sbr!4v1736180686476!5m2!1spt-BR!2sbr"
+					width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
+					tabindex="0" id="mapa">
+				</iframe>
 			</section>
-		</main>
-        <p>
-        <!-- Quebra de linha para espaçamento -->
-        </p>
-		<footer>
-			<section id="redes_sociais">
-				<a href="https://github.com/czagiacomo" target="_blank">
-					<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-				</a>
-                    <a href="https://github.com/czagiacomo" target="_blank">
-                    <img src="assets/img/github.svg" alt="Github" />
-				</a>
-				<a href="https://instagram.com/" target="_blank">
-					<img src="assets/img/instagram.svg" alt="Instagram" />
-				</a>
-			</section>
-			<h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
-		</footer>
-	</body>
+		</div>
+	</main>
+	<footer class="flex">
+		<section id="redes_sociais">
+			<a href="https://linkedin.com/in/czagiacomo/" target="_blank">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+			</a>
+			<a href="https://github.com/czagiacomo" target="_blank">
+				<img src="assets/img/github.svg" alt="Github" />
+			</a>
+			<a href="https://instagram.com/" target="_blank">
+				<img src="assets/img/instagram.svg" alt="Instagram" />
+			</a>
+		</section>
+		<h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
+	</footer>
+</body>
+
 </html>

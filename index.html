@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="Projeto Portfólio">
-		<meta name="author" content="Catharina Zagiacomo">
-		<meta name="keywords" content="HTML, CSS, JavaScript">
-        <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
-		<title>Meu Perfil</title>
-	</head>
-	<body>
-		<header>
-			<div id="header_content">
-				<div id="titulo">
-					<h1>Catharina Zagiacomo</h1>
-				</div>
-				<div id="menu">
-					<nav>
-						<ul id="menu">
-							<li>
-								<a href="index.html"> Home </a>
-							</li>
-							<li>
-								<a href="contato.html"> Contato </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Projeto Portfólio">
+	<meta name="author" content="Catharina Zagiacomo">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<link rel="icon" type="image/svg" href="./assets/img/plant.svg" />
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div id="header_content" class="flex">
+			<div id="titulo">
+				<h1>Catharina Zagiacomo</h1>
 			</div>
-		</header>
-		<main>
-			<section id="about">
-				<h2>Sobre a Catharina Zagiacomo</h2>
-				<div id="conteudo">
-					<img
-						src="./assets/img/user_02.svg"
-						alt="Ícone da Criadora do Conteúdo"
-                        width="400"
-						height="250"
-					/>
-					<article id="sobre_texto">
-						<p>
-                            Me chamo Catharina Zagiacomo, tenho 25 anos, sou desenvolvedora Full Stack e formada em computação em nuvem.
-                            Tenho bons conhecimentos em segurança da informação aplicada a web, e segurança na nuvem.
-                            Caso queira entrar em contato, utilize o formulário de contato, ou acesse minhas redes sociais.
-						</p>
-					</article>
-				</div>
-			</section>
-			<section id="video">
-				<h2>Meu vídeo favorito:</h2>
-				<div class="youtube">
-					<iframe
-						width="560"
-						height="315"
-						src="https://www.youtube.com/embed/TAeNlpUIlRs?si=6v_kKXZqMPs5ZE7I"
-						frameborder="0"
-						allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-						allowfullscreen
-					></iframe>
-				</div>
-			</section>
-		</main>
-		<footer>
-            <section id="redes_sociais">
-                    <a href="https://linkedin.com/in/czagiacomo/" target="_blank">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-                    </a>
-                    <a href="https://github.com/czagiacomo"  target="_blank">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-                    <a href="https://instagram.com/" target="_blank">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
-            </section>
-            <h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
-		</footer>
-	</body>
+			<div id="menu">
+				<nav>
+					<ul id="menu">
+						<li>
+							<a href="index.html"> Home </a>
+						</li>
+						<li>
+							<a href="contato.html"> Contato </a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="about" class="flex_start">
+			<h2>Sobre Catharina Zagiacomo</h2>
+			<div id="conteudo" class="flex">
+				<img src="./assets/img/profile_pic.png" alt="Ícone da Criadora do Conteúdo" width="400" height="205"
+					class="img_profile" />
+				<article id="sobre_texto">
+					<p>
+						Me chamo Catharina Zagiacomo, tenho 25 anos, sou desenvolvedora Full Stack e formada em
+						computação em nuvem.
+						Tenho bons conhecimentos em segurança da informação aplicada a web, e segurança na nuvem.
+						Caso queira entrar em contato, utilize o formulário de contato, ou acesse minhas redes sociais.
+					</p>
+				</article>
+			</div>
+		</section>
+		<section id="video" class="flex_start">
+			<h2>Meu vídeo favorito:</h2>
+			<!-- Vídeo provisório -->
+			<!-- TODO: Gravar e inserir um vídeo de apresentação pessoal -->
+			<div class="youtube" class="flex">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/TAeNlpUIlRs?si=6v_kKXZqMPs5ZE7I"
+					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+			</div>
+		</section>
+	</main>
+	<footer class="flex">
+		<section id="redes_sociais">
+			<a href="https://linkedin.com/in/czagiacomo/" target="_blank">
+				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
+			</a>
+			<a href="https://github.com/czagiacomo" target="_blank">
+				<img src="assets/img/github.svg" alt="Github" />
+			</a>
+			<a href="https://instagram.com/" target="_blank">
+				<img src="assets/img/instagram.svg" alt="Instagram" />
+			</a>
+		</section>
+		<h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
+	</footer>
+</body>
+
 </html>
