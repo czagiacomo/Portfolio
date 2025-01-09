@@ -7,31 +7,14 @@
 	<meta name="description" content="Projeto Portfólio">
 	<meta name="author" content="Catharina Zagiacomo">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+	<link rel="icon" type="image/svg" href="./assets/img/favicon_01.svg" />
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<title>Meu Perfil</title>
 </head>
 
 <body>
-	<header>
-		<div id="header_content" class="flex">
-			<div id="titulo">
-				<h1>Catharina Zagiacomo</h1>
-			</div>
-			<div id="menu">
-				<nav>
-					<ul id="menu">
-						<li>
-							<a href="index.html"> Home </a>
-						</li>
-						<li>
-							<a href="contato.html"> Contato </a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+	<div id="header"></div>
+
 	<main>
 		<div id="contact" class="flex">
 			<form id="formulario" action="#" method="submit">
@@ -50,31 +33,22 @@
 			</form>
 			<section id="mapa" class="flex_start">
 				<div id="endereco">
-					<p>Castle Road</p>
-					<p>Blackrock, Cork, Irlanda</p>
+					<p>São Paulo</p>
+					<p>SP, Brasil</p>
 				</div>
 				<iframe
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8280.635268138512!2d-8.40629893584305!3d51.90024534427724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48449ad7d02b766f%3A0xf73c692f28a40287!2sBlackrock%20Castle%20Observatory!5e0!3m2!1spt-BR!2sbr!4v1736180686476!5m2!1spt-BR!2sbr"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467690.14386865456!2d-46.92495573160536!3d-23.682063556622076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1736442754716!5m2!1spt-BR!2sbr"
 					width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
 					tabindex="0" id="mapa">
 				</iframe>
 			</section>
 		</div>
 	</main>
-	<footer class="flex">
-		<section id="redes_sociais">
-			<a href="https://linkedin.com/in/czagiacomo/" target="_blank">
-				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-			</a>
-			<a href="https://github.com/czagiacomo" target="_blank">
-				<img src="assets/img/github.svg" alt="Github" />
-			</a>
-			<a href="https://instagram.com/" target="_blank">
-				<img src="assets/img/instagram.svg" alt="Instagram" />
-			</a>
-		</section>
-		<h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
-	</footer>
+	
+	<div id="footer"></div>
+	
+	<script src="./assets/js/header-loader.js"></script>
+	<script src="./assets/js/footer-loader.js"></script>
 
 	<script src="./assets/js/script.js"></script>
 

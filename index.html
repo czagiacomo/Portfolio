@@ -7,34 +7,17 @@
 	<meta name="description" content="Projeto Portfólio">
 	<meta name="author" content="Catharina Zagiacomo">
 	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<link rel="icon" type="image/svg" href="./assets/img/plant.svg" />
+	<link rel="icon" type="image/svg" href="./assets/img/favicon_01.svg" />
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<title>Portfolio</title>
 </head>
 
 <body>
-	<header>
-		<div id="header_content" class="flex">
-			<div id="titulo">
-				<h1>Catharina Zagiacomo</h1>
-			</div>
-			<div id="menu">
-				<nav>
-					<ul id="menu">
-						<li>
-							<a href="index.html"> Home </a>
-						</li>
-						<li>
-							<a href="contato.html"> Contato </a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
+	<div id="header"></div>
+	
 	<main>
 		<section id="about" class="flex_start">
-			<h2>Sobre Catharina Zagiacomo</h2>
+			<h2>Sobre mim</h2>
 			<div id="conteudo" class="flex">
 				<img src="./assets/img/profile_pic.png" alt="Ícone da Criadora do Conteúdo" width="400" height="205"
 					class="img_profile" />
@@ -53,26 +36,16 @@
 			<!-- Vídeo provisório -->
 			<!-- TODO: Gravar e inserir um vídeo de apresentação pessoal -->
 			<div class="youtube" class="flex">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/TAeNlpUIlRs?si=6v_kKXZqMPs5ZE7I"
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/suuK4OEockY?si=IFUDySYMsPwLMxsg"
 					frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen></iframe>
 			</div>
 		</section>
 	</main>
-	<footer class="flex">
-		<section id="redes_sociais">
-			<a href="https://linkedin.com/in/czagiacomo/" target="_blank">
-				<img src="assets/img/linkedin.svg" alt="LinkedIn" />
-			</a>
-			<a href="https://github.com/czagiacomo" target="_blank">
-				<img src="assets/img/github.svg" alt="Github" />
-			</a>
-			<a href="https://instagram.com/" target="_blank">
-				<img src="assets/img/instagram.svg" alt="Instagram" />
-			</a>
-		</section>
-		<h3>Feito com ❤️ por Catharina Zagiacomo - 2025</h3>
-	</footer>
+	<div id="footer"></div>
+
+	<script src="./assets/js/header-loader.js"></script>
+	<script src="./assets/js/footer-loader.js"></script>
 </body>
 
 </html>
