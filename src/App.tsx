@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Home from "./pages/home/Home";
+import Contact from "./pages/contact/Contact";
+import Projects from "./pages/projects/Projects";
+import BlogPessoal from "./pages/projects/BlogPessoal";
+import CRM from "./pages/projects/CRM";
+import Name from "./pages/projects/ProjectTemplate";
+import UpButton from "./components/upbutton/UpButton";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <Navbar />
+      <div className="min-h-[80vh]">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/blogpessoal" element={<BlogPessoal />} />
+          <Route path="/CRM" element={<CRM />} />
+          <Route path="/ProjectTemplate" element={<Name />} />
+        </Routes>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <UpButton />
+      <Footer />
+    </BrowserRouter>
+  );
 }
-
-export default App
