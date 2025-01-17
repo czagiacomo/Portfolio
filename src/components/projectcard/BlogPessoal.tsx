@@ -15,7 +15,7 @@ function BlogPessoal() {
             <div className="badge badge-secondary">FullStack</div>
           </h2>
         </a>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p>Projeto FullStack desenvolvido utilizando React e Spring Framework</p>
         <div className="card-actions justify-end">
           <div className="badge border-[#2596be] text-[#2596be] badge-outline">
             Generation Brasil
