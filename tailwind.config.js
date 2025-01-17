@@ -12,6 +12,8 @@ export default {
         autumn: {
           ...require("daisyui/src/theming/themes")["autumn"],
           "--rounded-btn": "1.9rem",
+          "genbr": "#2596be",
+
         },
       },
       "light",

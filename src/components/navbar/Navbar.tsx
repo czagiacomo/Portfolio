@@ -1,6 +1,18 @@
 import { Plant } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 
 function Navbar() {
+  const [isdark, setIsdark] = useState<boolean>(() => {
+    // Recuperando o valor de "isdark" do localStorage
+    const savedIsdark = localStorage.getItem("isdark");
+    return savedIsdark ? JSON.parse(savedIsdark) : false;
+  });
+
+  useEffect(() => {
+    // Salvando a configuração de tema no localStorage
+    localStorage.setItem("isdark", JSON.stringify(isdark));
+  }, [isdark]);
+
   return (
     <>
       <div className="navbar bg-base-100">
@@ -30,6 +42,8 @@ function Navbar() {
                 </svg>
                 <input
                   type="checkbox"
+                  checked={isdark}
+                  onChange={() => setIsdark(!isdark)}
                   value="forest"
                   className="toggle theme-controller"
                 />
@@ -49,17 +63,17 @@ function Navbar() {
               </label>
             </li>
             <li>
-              <a href="/contact" >Contato</a>
+              <a href="/contact">Contato</a>
             </li>
             <li>
               <details>
                 <summary>Projetos</summary>
-                <ul className="bg-base-100 rounded-t-none p-2">
+                <ul className="right-0 top-11 bg-[#e6e5e5] w-56 rounded-t-none p-2">
                   <li>
-                    <a href="/" >Blog Pessoal</a>
+                    <a href="/blogpessoal">Blog Pessoal</a>
                   </li>
                   <li>
-                    <a href="/" >Link 2</a>
+                    <a href="/projects">Ver Todos</a>
                   </li>
                 </ul>
               </details>
@@ -67,23 +81,6 @@ function Navbar() {
           </ul>
         </div>
       </div>
-      {/* <div className="flex justify-between py-2 px-4">
-        <a href="index.html" className="flex items-center">
-          <Plant size={48} color="#3b8c3c" weight="duotone" alt="Home" />
-          <span className="text-xl font-bold ml-2">Catharina Zagiacomo</span>
-        </a>
-        <nav className="flex items-center gap-4 ml-8">
-          <a href="index.html" className="hover:underline">
-            Home
-          </a>
-          <a href="projetos.html" className="hover:underline">
-            Projetos
-          </a>
-          <a href="contato.html" className="hover:underline">
-            Contato
-          </a>
-        </nav>
-      </div>*/}
     </>
   );
 }
