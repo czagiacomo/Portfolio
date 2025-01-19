@@ -4,7 +4,7 @@ function Home() {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content flex-col lg:flex-row-reverse ml-12 p-8">
           <img
-            src="https://czagiacomo.github.io/Portfolio/assets/img/profile_pic.png"
+            src="https://i.imgur.com/ngAGW2E.png"
             className="max-w-sm rounded-full shadow-2xl scale-75"
           />
           <div>
