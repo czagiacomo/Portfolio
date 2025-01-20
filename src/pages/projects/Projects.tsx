@@ -1,6 +1,7 @@
 import BlogPessoal from "../../components/projectcard/BlogPessoal";
 import CRM from "../../components/projectcard/CRM";
 import Name from "../../components/projectcard/ProjectTemplate";
+import Portfolio from "../../components/projectcard/Portfolio";
 
 function Projects() {
   return (
@@ -11,6 +12,7 @@ function Projects() {
         </h1>
       </div>
       <div className="container scale-95 mx-auto my-4 grid justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Portfolio/>
         <BlogPessoal />
         <CRM />
         <Name />

@@ -1,15 +1,57 @@
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
+
 function BlogPessoal() {
   return (
     <>
-      <div id="contact" className="flex bg-base-200 min-h-screen">
-        <section id="mapa" className="flex_start">
-          <div id="endereco">
-            <p>São Paulo</p>
-            <p>SP, Brasil</p>
+    <>
+      <div className="bg-base-200">
+        <hr className="max-w-6xl mx-auto" />
+        <div className="mt-[3rem]">
+          <img
+            className="w-full h-[400px] object-cover max-w-6xl mx-auto shadow-xl"
+            src="https://i.imgur.com/rJms1lw.png"
+            alt="post-img"
+          />
+          {/*
+        className="w-full max-w-6xl mx-auto"
+        className="w-full h-[400px] object-cover"
+        */}
+        </div>
+
+        <div className="max-w-4xl mx-auto my-6 px-6">
+          <h1 className="text-4xl font-bold mb-4">Meu Portfolio!</h1>
+          <div className="flex justify-between text-gray-600 text-sm mb-4">
+            <div>
+              <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>
+            </div>
+            <div>19/01/2025</div>
           </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d914.3751813706468!2d-46.634366393282214!3d-23.550453338448467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59aa560e8691%3A0x7c2c9afc207da0a2!2sMarco%20Zero%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1736446679870!5m2!1spt-BR!2sbr"></iframe>
-        </section>
+
+          <div className="flex space-x-3 mb-6 mt-6">
+            <a href="https://linkedin.com/in/czagiacomo/" target="_blank">
+              <LinkedinLogo size={32} color="#0e76a8 " weight="fill" />
+            </a>
+
+            <a href="https://github.com/czagiacomo" target="_blank">
+              <GithubLogo size={30} weight="fill" />
+            </a>
+          </div>
+
+          <article>
+            <p className="text-lg leading-7 mb-4">
+              In communications and information processing, code is a system of
+              rules to convert information—such as a letter, word, sound, image,
+              or gesture—into another form.
+            </p>
+            <p className="text-lg leading-7">
+              The process of encoding converts information from a source into
+              symbols for communication or storage.
+            </p>
+          </article>
+        </div>
+        <hr className="max-w-6xl mx-auto my-6" />
       </div>
+    </>
     </>
   );
 }
