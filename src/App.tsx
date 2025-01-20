@@ -3,7 +3,7 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Sobre from "./pages/about/Sobre";
-import Projects from "./pages/projects/Projects";
+import Projects from "./pages/listprojects/ListProjects";
 import BlogPessoal from "./pages/projects/BlogPessoal";
 import CRM from "./pages/projects/CRM";
 import Name from "./pages/projects/ProjectTemplate";
@@ -22,10 +22,10 @@ export default function App() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/projetos" element={<Projects />} />
           <Route path="/blogpessoal" element={<BlogPessoal />} />
-          <Route path="/CRM" element={<CRM />} />
-          <Route path="/ProjectTemplate" element={<Name />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Test" element={<Test />} />
+          <Route path="/crm" element={<CRM />} />
+          <Route path="/projecttemplate" element={<Name />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </div>
       <UpButton />
