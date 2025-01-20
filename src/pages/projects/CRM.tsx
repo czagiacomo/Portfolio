@@ -3,13 +3,13 @@ import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 function CRM() {
   return (
     <>
-    <>
+    
       <div className="bg-base-200">
         <hr className="max-w-6xl mx-auto" />
         <div className="mt-[3rem]">
           <img
             className="w-full h-[400px] object-cover max-w-6xl mx-auto shadow-xl"
-            src="https://i.imgur.com/rJms1lw.png"
+            src="https://i.imgur.com/PZhAJT1.png"
             alt="post-img"
           />
           {/*
@@ -19,7 +19,7 @@ function CRM() {
         </div>
 
         <div className="max-w-4xl mx-auto my-6 px-6">
-          <h1 className="text-4xl font-bold mb-4">Meu Portfolio!</h1>
+          <h1 className="text-4xl font-bold mb-4">Projeto CRM</h1>
           <div className="flex justify-between text-gray-600 text-sm mb-4">
             <div>
               <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>
@@ -51,7 +51,6 @@ function CRM() {
         </div>
         <hr className="max-w-6xl mx-auto my-6" />
       </div>
-    </>
     </>
   );
 }

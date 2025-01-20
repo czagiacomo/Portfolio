@@ -3,13 +3,12 @@ import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 function BlogPessoal() {
   return (
     <>
-    <>
       <div className="bg-base-200">
         <hr className="max-w-6xl mx-auto" />
         <div className="mt-[3rem]">
           <img
             className="w-full h-[400px] object-cover max-w-6xl mx-auto shadow-xl"
-            src="https://i.imgur.com/rJms1lw.png"
+            src="https://i.imgur.com/3TxdOXM.png"
             alt="post-img"
           />
           {/*
@@ -19,7 +18,7 @@ function BlogPessoal() {
         </div>
 
         <div className="max-w-4xl mx-auto my-6 px-6">
-          <h1 className="text-4xl font-bold mb-4">Meu Portfolio!</h1>
+          <h1 className="text-4xl font-bold mb-4">Blog Pessoal</h1>
           <div className="flex justify-between text-gray-600 text-sm mb-4">
             <div>
               <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>
@@ -51,7 +50,6 @@ function BlogPessoal() {
         </div>
         <hr className="max-w-6xl mx-auto my-6" />
       </div>
-    </>
     </>
   );
 }

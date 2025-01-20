@@ -15,6 +15,22 @@ function Name() {
             <div className="badge badge-secondary">NEW</div>
           </h2>
         </a>
+        <div className="flex justify-between">
+          <a href="/blogpessoal">
+            <h2 className="card-title">
+              Name with Star
+              <div className="badge badge-secondary">STAR</div>
+            </h2>
+          </a>
+          <div className="rating">
+            <input
+              type="radio"
+              name="rating-2"
+              className="mask mask-star-2 bg-orange-400"
+            />
+          </div>
+        </div>
+
         <p>Frase</p>
         <div className="card-actions justify-end">
           <div className="badge badge-outline">Badge</div>
