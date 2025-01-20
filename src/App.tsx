@@ -9,7 +9,7 @@ import CRM from "./pages/projects/CRM";
 import Name from "./pages/projects/ProjectTemplate";
 import UpButton from "./components/upbutton/UpButton";
 import Portfolio from "./pages/projects/Portfolio";
-import Test from "./pages/projects/Test";
+import Team from "./pages/team/Team";
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="/crm" element={<CRM />} />
           <Route path="/projecttemplate" element={<Name />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/test" element={<Test />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </div>
       <UpButton />

@@ -25,7 +25,7 @@ function Name() {
         </div>
 
         <div className="max-w-4xl mx-auto my-6 px-6">
-          <h1 className="text-4xl font-bold mb-4">Meu Portfolio!</h1>
+          <h1 className="text-4xl font-bold mb-4">Name</h1>
           <div className="flex justify-between text-gray-600 text-sm mb-4">
             <div>
               <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>

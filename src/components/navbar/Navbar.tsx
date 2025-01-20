@@ -61,7 +61,7 @@ function Navbar() {
               </label>
             </li>
             <li>
-              <a href="/contact">Sobre</a>
+              <a href="/sobre">Sobre</a>
             </li>
             <li>
               <details>
