@@ -1,7 +1,7 @@
-import BlogPessoal from "../../components/projectcard/BlogPessoal";
-import CRM from "../../components/projectcard/CRM";
-import Name from "../../components/projectcard/ProjectTemplate";
-import Portfolio from "../../components/projectcard/Portfolio";
+import BlogPessoal from "../../components/projectcard/CardBlogPessoal";
+import CRM from "../../components/projectcard/CardCRM";
+import Name from "../../components/projectcard/CardProjectTemplate";
+import Portfolio from "../../components/projectcard/CardPortfolio";
 
 function Projects() {
   return (
