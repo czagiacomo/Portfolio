@@ -1,4 +1,4 @@
-function Contact() {
+function Sobre() {
   return (
     <>
       <div id="contact" className="flex">
@@ -53,4 +53,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Sobre;

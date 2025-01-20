@@ -3,13 +3,11 @@ import { useEffect, useState } from "react";
 
 function Navbar() {
   const [isdark, setIsdark] = useState<boolean>(() => {
-    // Recuperando o valor de "isdark" do localStorage
     const savedIsdark = localStorage.getItem("isdark");
     return savedIsdark ? JSON.parse(savedIsdark) : false;
   });
 
   useEffect(() => {
-    // Salvando a configuração de tema no localStorage
     localStorage.setItem("isdark", JSON.stringify(isdark));
   }, [isdark]);
 
@@ -63,17 +61,20 @@ function Navbar() {
               </label>
             </li>
             <li>
-              <a href="/contact">Contato</a>
+              <a href="/contact">Sobre</a>
             </li>
             <li>
               <details>
                 <summary>Projetos</summary>
-                <ul className="right-0 top-11 bg-[#e6e5e5] w-56 rounded-t-none p-2">
+                <ul className="right-0 top-11 bg-[#e6e5e5] w-56 rounded-t-none p-2 z-50">
                   <li>
                     <a href="/blogpessoal">Blog Pessoal</a>
                   </li>
                   <li>
-                    <a href="/projects">Ver Todos</a>
+                    <a href="/portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a href="/projetos">Ver Todos</a>
                   </li>
                 </ul>
               </details>
