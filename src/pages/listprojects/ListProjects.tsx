@@ -15,7 +15,6 @@ function Projects() {
         <Portfolio/>
         <BlogPessoal />
         <CRM />
-        <Name />
       </div>
     </>
   );

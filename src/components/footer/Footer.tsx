@@ -5,9 +5,19 @@ function Footer() {
     <>
       <footer className="footer footer-center bg-base-100 text-base-content rounded p-10">
         <nav className="grid grid-flow-col gap-4">
-          <a href="/" className="link link-hover">Home</a>
-          <a href="/projetos" className="link link-hover">Projetos</a>
-          <a href="/sobre" className="link link-hover">Sobre</a>
+          <a href="/" className="link link-hover">
+            Home
+          </a>
+          <a href="/projetos" className="link link-hover">
+            Projetos
+          </a>
+
+          <a href="/team" className="link link-hover">
+            Nosso time
+          </a>
+          <a href="/sobre" className="link link-hover">
+            Sobre
+          </a>
         </nav>
         <nav>
           <div className="grid grid-flow-col gap-4">
