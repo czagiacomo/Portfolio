@@ -12,8 +12,21 @@ export default {
         autumn: {
           ...require("daisyui/src/theming/themes")["autumn"],
           "--rounded-btn": "1.9rem",
-          "genbr": "#2596be",
-
+          ".bg-drop-down": {
+            "background-color": "#e6e5e5",
+          },
+          ".about-me-text-color": {
+            color: "#334155",
+          },
+        },
+        forest: {
+          ...require("daisyui/src/theming/themes")["forest"],
+          ".bg-drop-down": {
+            "background-color": "#110D0D",
+          },
+          ".about-me-text-color": {
+            color: "#475569",
+          },
         },
       },
       "light",
@@ -47,7 +60,7 @@ export default {
       "winter",
       "dim",
       "nord",
-      "sunset"
+      "sunset",
     ],
   },
 };

@@ -40,13 +40,13 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-base-200 py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-xl">
-          <h2 className="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-pretty text-3xl font-semibold tracking-tight text-primary sm:text-4xl">
             Conheça nosso Time!
           </h2>
-          <p className="mt-6 text-lg/8 text-gray-600">
+          <p className="mt-6 text-lg/8 about-me-text-color">
             Nós somos um time feminino e apaixonado pela área de tecnologia,
             buscamos sempre evoluir cada vez mais em nossas habilidades,
             procurando sempre trazer os melhores resultados de forma prática e
@@ -66,10 +66,10 @@ export default function Team() {
                   className="size-16 rounded-full"
                 />
                 <div>
-                  <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">
+                  <h3 className="text-base/7 font-semibold tracking-tight text-secondary">
                     {person.name}
                   </h3>
-                  <p className="text-sm/6 font-semibold text-indigo-600">
+                  <p className="text-sm/6 font-semibold text-indigo-500">
                     {person.role}
                   </p>
                 </div>

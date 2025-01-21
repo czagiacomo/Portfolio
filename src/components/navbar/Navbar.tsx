@@ -66,9 +66,12 @@ function Navbar() {
             <li>
               <details>
                 <summary>Projetos</summary>
-                <ul className="right-0 top-11 bg-[#e6e5e5] w-56 rounded-t-none p-2 z-50">
+                <ul className="right-0 top-11 bg-drop-down w-56 rounded-t-none p-2 z-50">
                   <li>
                     <a href="/blogpessoal">Blog Pessoal</a>
+                  </li>
+                  <li>
+                    <a href="/crm">CRM</a>
                   </li>
                   <li>
                     <a href="/portfolio">Portfolio</a>
