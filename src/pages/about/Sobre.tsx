@@ -6,7 +6,7 @@ function Sobre() {
       <div className="hero-content flex-col lg:flex-row mx-28 p-8">
         <img
           src="https://i.imgur.com/atZsYuw.jpg"
-          className="max-w-sm rounded-lg shadow-2xl custom-mask-element scale-150 pr-3"
+          className="max-w-sm rounded-lg shadow-2xl mask-paint-custom scale-150 pr-3"
         />
         <div className="py-6 pl-32">
           <h1 className="text-5xl font-bold">Sobre mim</h1>

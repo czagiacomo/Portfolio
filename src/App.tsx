@@ -10,7 +10,6 @@ import Name from "./pages/projects/ProjectTemplate";
 import UpButton from "./components/upbutton/UpButton";
 import Portfolio from "./pages/projects/Portfolio";
 import Team from "./pages/team/Team";
-import "./app.css";
 
 export default function App() {
   return (

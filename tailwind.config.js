@@ -18,6 +18,10 @@ export default {
           ".about-me-text-color": {
             color: "#334155",
           },
+          ".mask-paint-custom": {
+            "mask-image": 'url("https://i.imgur.com/kVXTurz.png")',
+            "mask-mode": "alpha",
+          },
         },
         forest: {
           ...require("daisyui/src/theming/themes")["forest"],
@@ -26,6 +30,10 @@ export default {
           },
           ".about-me-text-color": {
             color: "#475569",
+          },
+          ".mask-paint-custom": {
+            "mask-image": 'url("https://i.imgur.com/kVXTurz.png")',
+            "mask-mode": "alpha",
           },
         },
       },
