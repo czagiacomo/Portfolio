@@ -52,7 +52,7 @@ function Sobre() {
           </div>
           <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <a
-              href="https://drive.google.com/file/d/1O6Wp8niz2x-9eEiiGwWfJksF42ZIXJGV/"
+              href="https://drive.google.com/file/d/1zgsSqmzsLWt5ozSnul7XvbBXp-J3XeFD/"
               target="_blank"
             >
               <button className="btn btn-primary w-full py-4 mx-auto flex justify-center">
@@ -60,7 +60,7 @@ function Sobre() {
               </button>
             </a>
             <a
-              href="https://drive.google.com/uc?export=download&id=1O6Wp8niz2x-9eEiiGwWfJksF42ZIXJGV"
+              href="https://drive.google.com/uc?export=download&id=1zgsSqmzsLWt5ozSnul7XvbBXp-J3XeFD"
               target="_blank"
               download
             >
