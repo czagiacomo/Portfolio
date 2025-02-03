@@ -1,11 +1,11 @@
-function Name() {
+function CardName() {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure className="h-64 w-full">
         <img
-          className="h-full w-full object-cover"
-          src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-          alt="Alt"
+          className="h-full w-full object-cover bg-[#fef2e6]"
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3M5YTd6MDlnN3M2bWl4NTdkaTNyMGs0YXI4ZWU1MXp2b2Rkb25mYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nwbkrnv2K89UrHDRRy/giphy.gif"
+          alt="Imagem com fundo amarelo e escrito em preto dizendo 'Work in Progress'"
         />
       </figure>
       <div className="card-body">
@@ -43,4 +43,4 @@ function Name() {
   );
 }
 
-export default Name;
+export default CardName;

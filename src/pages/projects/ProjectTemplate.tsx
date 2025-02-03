@@ -14,7 +14,7 @@ function Name() {
         <hr className="max-w-6xl mx-auto" />
         <div className="mt-[3rem]">
           <img
-            className="w-full h-[400px] object-cover max-w-6xl mx-auto shadow-xl"
+            className="w-full h-[400px] object-cover object-[25%_75%] max-w-6xl mx-auto shadow-xl"
             src="https://i.imgur.com/rJms1lw.png"
             alt="post-img"
           />
@@ -25,7 +25,7 @@ function Name() {
         </div>
 
         <div className="max-w-4xl mx-auto my-6 px-6">
-          <h1 className="text-4xl font-bold mb-4">Name</h1>
+          <h1 className="text-4xl font-bold mb-4 font-viga mt-10">Name</h1>
           <div className="flex justify-between text-gray-600 text-sm mb-4">
             <div>
               <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>

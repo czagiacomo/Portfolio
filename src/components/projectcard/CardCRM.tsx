@@ -1,19 +1,20 @@
-function CRM() {
+function CardCRM() {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure className="h-64 w-full">
         <img
-          className="h-full w-full object-cover"
-          src="https://i.imgur.com/PZhAJT1.png"
+          className="h-full w-full object-cover bg-[#fef2e6]"
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3M5YTd6MDlnN3M2bWl4NTdkaTNyMGs0YXI4ZWU1MXp2b2Rkb25mYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nwbkrnv2K89UrHDRRy/giphy.gif"
           alt="Imagem com fundo amarelo e escrito em preto dizendo 'Work in Progress'"
         />
+
         {/*<div className="skeleton h-64 w-full"></div>*/}
       </figure>
       <div className="card-body">
         <div className="flex justify-between">
           <a href="/CRM">
             <h2 className="card-title">
-              CRM
+              CRM - WIP
               <div className="badge badge-secondary">FullStack</div>
             </h2>
           </a>
@@ -42,4 +43,4 @@ function CRM() {
   );
 }
 
-export default CRM;
+export default CardCRM;

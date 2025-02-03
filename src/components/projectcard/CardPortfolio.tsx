@@ -1,10 +1,10 @@
-function Portfolio() {
+function CardPortfolio() {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure className="h-64 w-full">
         <img
           className="h-full w-full object-cover"
-          src="https://i.imgur.com/rJms1lw.png"
+          src="https://i.imgur.com/w1Sf2DR.png"
           alt="Captura de Tela da Home do Portfolio"
         />
       </figure>
@@ -29,4 +29,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default CardPortfolio;

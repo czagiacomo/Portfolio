@@ -4,7 +4,7 @@ function BlogPessoal() {
       <figure className="h-64 w-full">
         <img
           className="h-full w-full object-cover"
-          src="https://i.imgur.com/3TxdOXM.png"
+          src="https://i.imgur.com/5tSzbgM.png"
           alt="Imagem da Página Inicial do Blog Pessoal"
         />
       </figure>

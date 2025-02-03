@@ -3,17 +3,13 @@ import { GithubLogo, Globe, LinkedinLogo } from "@phosphor-icons/react";
 function Footer() {
   return (
     <>
-      <footer className="footer footer-center bg-base-100 text-base-content rounded p-10">
+      <footer className="footer footer-center bg-base-100 text-base-content rounded p-10 shadow-[0px_-1px_10px_rgba(0,0,0,0.2)]">
         <nav className="grid grid-flow-col gap-4">
           <a href="/" className="link link-hover">
             Home
           </a>
           <a href="/projetos" className="link link-hover">
             Projetos
-          </a>
-
-          <a href="/team" className="link link-hover">
-            Nosso time
           </a>
           <a href="/sobre" className="link link-hover">
             Sobre
@@ -27,7 +23,7 @@ function Footer() {
             <a href="https://github.com/czagiacomo" target="_blank">
               <GithubLogo size={48} weight="regular" />
             </a>
-            <a href="https://czagiacomo.github.io/Portfolio/" target="_blank">
+            <a href="https://www.czagiacomo.com" target="_blank">
               <Globe size={48} weight="regular" />
             </a>
           </div>

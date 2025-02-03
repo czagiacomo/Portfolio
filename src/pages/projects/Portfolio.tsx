@@ -1,4 +1,9 @@
-import { GithubLogo, LinkedinLogo, StarFour } from "@phosphor-icons/react";
+import {
+  GithubLogo,
+  Globe,
+  LinkedinLogo,
+  StarFour,
+} from "@phosphor-icons/react";
 
 function Portfolio() {
   return (
@@ -7,8 +12,8 @@ function Portfolio() {
         <hr className="max-w-6xl mx-auto" />
         <div className="mt-[3rem]">
           <img
-            className="w-full h-[400px] object-cover max-w-6xl mx-auto shadow-xl"
-            src="https://i.imgur.com/rJms1lw.png"
+            className="w-full h-[400px] object-cover object-[25%_75%] max-w-6xl mx-auto shadow-xl"
+            src="https://i.imgur.com/w1Sf2DR.png"
             alt="post-img"
           />
           {/*
@@ -18,7 +23,9 @@ function Portfolio() {
         </div>
 
         <div className="max-w-4xl mx-auto my-6 px-6">
-          <h1 className="text-4xl font-bold mb-4">Meu Portfolio!</h1>
+          <h1 className="text-4xl font-bold mb-4 font-viga mt-10">
+            Meu Portfolio!
+          </h1>
           <div className="flex justify-between text-gray-600 text-sm mb-4">
             <div>
               <b>Autora - Catharina Zagiacomo (Dev BackEnd)</b>
@@ -30,8 +37,11 @@ function Portfolio() {
             <a href="https://linkedin.com/in/czagiacomo/" target="_blank">
               <LinkedinLogo size={32} color="#0e76a8 " weight="fill" />
             </a>
-            <a href="https://github.com/czagiacomo" target="_blank">
+            <a href="https://github.com/czagiacomo/Portfolio" target="_blank">
               <GithubLogo size={30} weight="fill" />
+            </a>
+            <a href="https://www.czagiacomo.com" target="_blank">
+              <Globe size={30} weight="regular" color="#0d78d2" />
             </a>
           </div>
           <article>
@@ -185,12 +195,15 @@ function Portfolio() {
                   <a href="https://github.com/czagiacomo" target="_blank">
                     <GithubLogo size={48} weight="fill" />
                   </a>
+                  <a href="https://www.czagiacomo.com" target="_blank">
+                    <Globe size={48} weight="regular" color="#0d78d2" />
+                  </a>
                 </div>
               </p>
             </section>
           </article>
         </div>
-        <hr className="max-w-6xl mx-auto my-6" />
+        <hr className="max-w-6xl mx-auto" />
       </div>
     </>
   );

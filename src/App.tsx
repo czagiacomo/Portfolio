@@ -3,13 +3,16 @@ import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
 import Sobre from "./pages/about/Sobre";
+import Team from "./pages/team/Team";
 import Projects from "./pages/listprojects/ListProjects";
 import BlogPessoal from "./pages/projects/BlogPessoal";
 import CRM from "./pages/projects/CRM";
 import Name from "./pages/projects/ProjectTemplate";
 import UpButton from "./components/upbutton/UpButton";
 import Portfolio from "./pages/projects/Portfolio";
-import Team from "./pages/team/Team";
+
+import GenFit from "./pages/projects/GenFit";
+import BootcampGeneration from "./pages/bootcamp/BootcampGeneration";
 
 export default function App() {
   return (
@@ -20,12 +23,14 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/sobre" element={<Sobre />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/time" element={<Team />} />
           <Route path="/projetos" element={<Projects />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blogpessoal" element={<BlogPessoal />} />
           <Route path="/crm" element={<CRM />} />
+          <Route path="/genfit" element={<GenFit />} />
           <Route path="/projecttemplate" element={<Name />} />
+          <Route path="/genbrasil" element={<BootcampGeneration />} />
         </Routes>
       </div>
       <UpButton />

@@ -12,7 +12,7 @@ const Accordion = ({ title, answer }) => {
         <span className="font-medium">{title}</span>
         {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
         <svg
-          className="fill-secondary shrink-0 ml-8"
+          className="fill-primary shrink-0 ml-8"
           width="16"
           height="16"
           xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const Accordion = ({ title, answer }) => {
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out about-me-text-color text-sm ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-base-content text-sm ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"

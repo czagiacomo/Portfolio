@@ -1,4 +1,4 @@
-function AnimatedCard() {
+function CardAnimatedCard() {
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
         <div className="overflow-hidden relative w-full h-48">
@@ -35,4 +35,4 @@ function AnimatedCard() {
   );
 }
 
-export default AnimatedCard;
+export default CardAnimatedCard;

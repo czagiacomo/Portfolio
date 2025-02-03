@@ -19,7 +19,7 @@ function Home() {
               Fique a vontade para me enviar uma mensagem e conhecer mais da minha trajetória!
             </p>
             <a href="https://linkedin.com/in/czagiacomo/" target="_blank">
-              <button className="btn btn-primary">Fale comigo</button>
+              <button className="btn btn-primary w-5/12 py-2 mx-auto text-lg">Fale comigo</button>
             </a>
           </div>
         </div>

@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        charissil: ["Charis SIL", "serif"],
+        saira: ["Saira", "serif"],
+        viga: ["Viga", "serif"],
+      },
+    },
   },
   plugins: [require("daisyui")],
 
