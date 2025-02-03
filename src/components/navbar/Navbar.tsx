@@ -13,10 +13,10 @@ function Navbar() {
 
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 shadow-[0px_1px_10px_rgba(0,0,0,0.2)]">
         <div className="flex-1 py-2 px-1">
           <Plant size={48} color="#3b8c3c" weight="duotone" alt="Home" />
-          <a href="/" className="btn btn-ghost text-xl font-semibold">
+          <a href="/" className="btn btn-ghost text-xl font-semibold ">
             Catharina Zagiacomo
           </a>
         </div>
@@ -61,6 +61,9 @@ function Navbar() {
               </label>
             </li>
             <li>
+              <a href="/genbrasil">Bootcamp Generation</a>
+            </li>
+            <li>
               <a href="/sobre">Sobre</a>
             </li>
             <li>
@@ -72,6 +75,9 @@ function Navbar() {
                   </li>
                   <li>
                     <a href="/crm">CRM</a>
+                  </li>
+                  <li>
+                    <a href="/genfit">GenFit</a>
                   </li>
                   <li>
                     <a href="/portfolio">Portfolio</a>
