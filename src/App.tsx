@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
@@ -13,6 +13,12 @@ import Portfolio from "./pages/projects/Portfolio";
 
 import GenFit from "./pages/projects/GenFit";
 import BootcampGeneration from "./pages/bootcamp/BootcampGeneration";
+import ArticlePage from "./components/article/Article";
+
+const ArticlePageWrapper = () => {
+  const { slug } = useParams<{ slug: string }>();
+  return <ArticlePage slug={slug!} />;
+};
 
 export default function App() {
   return (
@@ -31,6 +37,7 @@ export default function App() {
           <Route path="/genfit" element={<GenFit />} />
           <Route path="/projecttemplate" element={<Name />} />
           <Route path="/genbrasil" element={<BootcampGeneration />} />
+          <Route path="/artigo/:slug" element={<ArticlePageWrapper />} />
         </Routes>
       </div>
       <UpButton />
