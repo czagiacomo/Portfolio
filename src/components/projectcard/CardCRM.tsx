@@ -4,8 +4,8 @@ function CardCRM() {
       <figure className="h-64 w-full">
         <img
           className="h-full w-full object-cover bg-[#fef2e6]"
-          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc3M5YTd6MDlnN3M2bWl4NTdkaTNyMGs0YXI4ZWU1MXp2b2Rkb25mYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/nwbkrnv2K89UrHDRRy/giphy.gif"
-          alt="Imagem com fundo amarelo e escrito em preto dizendo 'Work in Progress'"
+          src="https://i.imgur.com/pZNxwR7.png"
+          alt="Imagem com a página inicial do projeto Gestão Gen"
         />
 
         {/*<div className="skeleton h-64 w-full"></div>*/}
@@ -14,7 +14,7 @@ function CardCRM() {
         <div className="flex justify-between">
           <a href="/CRM">
             <h2 className="card-title">
-              CRM - WIP
+              CRM - Gestão Gen
               <div className="badge badge-secondary">FullStack</div>
             </h2>
           </a>

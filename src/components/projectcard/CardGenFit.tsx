@@ -13,7 +13,7 @@ function CardGenFit() {
           <div className="flex justify-between">
             <a href="/GenFit">
               <h2 className="card-title">
-                GenFit - WIP
+                GenFit
                 <div className="badge badge-secondary">FullStack</div>
               </h2>
             </a>

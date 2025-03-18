@@ -74,7 +74,7 @@ function Navbar() {
                     <a href="/blogpessoal">Blog Pessoal</a>
                   </li>
                   <li>
-                    <a href="/crm">CRM</a>
+                    <a href="/crm">GestãoGen - CRM</a>
                   </li>
                   <li>
                     <a href="/genfit">GenFit</a>
