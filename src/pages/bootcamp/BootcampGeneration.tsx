@@ -23,7 +23,7 @@ function BootcampGeneration() {
       */}
         </div>
 
-        <ArticlePage slug={"generation-brasil"} />
+        <ArticlePage slug={"rascunho-generation-brasil"} />
         <hr className="max-w-6xl mx-auto" />
       </div>
     </>
