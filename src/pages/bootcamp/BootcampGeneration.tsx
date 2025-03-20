@@ -25,6 +25,9 @@ function BootcampGeneration() {
 
         <ArticlePage slug={"generation-brasil"} />
         <hr className="max-w-6xl mx-auto" />
+        <p><a href"https://techjournal.czagiacomo.com/generation-brasil">Caso o artigo não esteja carregando, click aqui e acesso o artigo na integra.</p>
+
+
       </div>
     </>
   );
