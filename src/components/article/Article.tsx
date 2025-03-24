@@ -1,5 +1,6 @@
 import { GithubLogo, Globe, LinkedinLogo } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
+import { marked } from "marked";
 
 const ArticlePage = ({ slug }: { slug: string }) => {
   const [article, setArticle] = useState<{
@@ -11,37 +12,47 @@ const ArticlePage = ({ slug }: { slug: string }) => {
   } | null>(null);
 
   useEffect(() => {
-    fetch("https://gql.hashnode.com/", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        query: `
-          query {
-            publication(host: "${import.meta.env.VITE_HASHNODE_HOST}") {
-              post(slug: "${slug}") {
-                title
-                author { name }
-                publishedAt
-                readTimeInMinutes
-                content { html }
+    const fetchArticle = async () => {
+      try {
+        const res = await fetch("https://gql.hashnode.com/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            query: `
+              query {
+                publication(host: "${import.meta.env.VITE_HASHNODE_HOST}") {
+                  post(slug: "${slug}") {
+                    title
+                    author { name }
+                    publishedAt
+                    readTimeInMinutes
+                    content { markdown }
+                  }
+                }
               }
-            }
-          }
-        `,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
+            `,
+          }),
+        });
+
+        const data = await res.json();
         const post = data.data.publication.post;
 
-        setArticle({
-          title: post.title,
-          date: new Date(post.publishedAt).toLocaleDateString(),
-          readTime: post.readTimeInMinutes,
-          author: post.author.name,
-          content: post.content.html,
-        });
-      });
+        if (post) {
+          const htmlContent = await marked(post.content.markdown); // Aguarda a conversão do Markdown para HTML
+          setArticle({
+            title: post.title,
+            date: new Date(post.publishedAt).toLocaleDateString(),
+            readTime: post.readTimeInMinutes,
+            author: post.author.name,
+            content: htmlContent,
+          });
+        }
+      } catch (error) {
+        console.error("Erro ao buscar o artigo:", error);
+      }
+    };
+
+    fetchArticle();
   }, [slug]);
 
   return article ? (
